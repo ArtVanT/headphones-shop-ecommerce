@@ -1,0 +1,83 @@
+@use 'header';
+@use 'aside';
+@use 'main';
+h1{
+color: #000;
+font-size: 36px;
+font-family: Podkova;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin: 0;
+}
+h2{
+color: #000;
+font-size: 28px;
+font-family: Podkova;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+h3{
+ margin: 0;
+color: #000;
+font-size: 18px;
+font-family: Podkova;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+h4{
+color: #FFF;
+font-family: Podkova;
+font-size: 1.75rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin: 0;
+text-align: center;
+margin-bottom: 90px;
+}
+input::placeholder{
+    color: rgba(0, 0, 0, 0.38);
+    font-size: 18px;
+    font-family: Podkova;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 6px;;
+}
+span{
+color: #000;
+font-family: Podkova;
+font-size: 23px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.see__all{
+    margin-left: 15px;
+    background: none;
+    border: none;
+    }
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  width: 100% !important;
+    .container1__box{
+        height: 100vh;
+        width: 100%;
+        @media(min-width: 1618px){
+            margin-left: 268px;
+        }
+        @media(max-width: 1600px){
+            margin-left: 10px;
+        }
+        @media(max-width: 520px){
+            margin-left: 47px;
+        }
+       
+    
+    }
+}

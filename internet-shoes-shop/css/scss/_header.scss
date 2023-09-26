@@ -1,0 +1,95 @@
+.header__container{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 47px;
+    @media(max-width: 2600px){
+        gap: 50px;
+      
+    }
+    @media(max-width: 1600px){
+            justify-content: center;
+    }
+    @media(max-width: 1450px){
+        gap: 10px;
+    }
+    @media(max-width: 966px){
+        padding-left: 70px;
+    }
+    @media(max-width: 908px){
+        padding-left: 50%;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+   
+    .heading__main{
+        margin-top: 6px;
+        h3{
+            padding-left: 20px;
+        }
+    }
+    .filter__elements{
+        display: flex;
+        justify-content: space-around;
+        margin-right: 10%;
+        @media(max-width: 760px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button-input__items{
+            display: flex;
+            position: relative;
+        .header__input{
+            padding-left: 56px;
+            margin-top: 16px;
+            border: none;
+            width: 371px;
+            height: 47px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            background: #FEFEFE url('/img/header/input/search-icon.svg');
+            background-repeat: no-repeat;
+            background-position: 5% 50%;
+            outline: none;
+            box-shadow: 3px -3px 4px 0px rgba(0, 0, 0, 0.25) inset, 5px -3px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+        
+        .header-button__element{
+            width: 100%;
+            height: 100%;
+            border: none;
+            background:none;
+            background-image: url('/img/header/input/submit-header.svg');
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 372px;
+            top: 20px;
+            cursor: pointer;
+        }
+    }
+        .icons__list{
+            padding-left: 35px;
+            padding-top: 14.5px;
+            display: flex;
+            list-style-type: none;
+            li{
+                margin: 0;
+                padding-left: 23px;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 1610px){
+    .icons__list{
+        padding-left: 0 !important;
+        li{
+            padding-left: 5px;
+        }
+    }
+}
